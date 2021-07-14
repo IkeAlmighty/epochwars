@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="html">
+  <head>
+    <title>Epoch Wars</title>
+  </head>
+
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      background-color: rgb(20, 20, 20);
+    }
+  </style>
+
+  <body></body>
+
+  <!-- 3rd Party Modules -->
+  <script
+    src="https://cdn.socket.io/4.1.2/socket.io.min.js"
+    integrity="sha384-toS6mmwu70G0fw54EGlWWeA4z3dyJ+dlXBtSURSKN4vyRFOcxd3Bzjj/AoOwY+Rg"
+    crossorigin="anonymous"
+  ></script>
+  <script src="./js/pixi.min.js"></script>
+
+  <!-- Custom Modules -->
+  <script src="./js/uiwidgets.js"></script>
+  <script src="./js/models.js"></script>
+  <script src="./js/helpers.js"></script>
+  <script src="./js/views.js"></script>
+  <script src="./js/actions.js"></script>
+
+  <!-- Test Modules: -->
+  <script src="./testlib.js"></script>
+
+  <script src="./js/uiwidgets.test.js"></script>
+  <script src="./js/models.test.js"></script>
+  <script src="./js/helpers.test.js"></script>
+  <script src="./js/views.test.js"></script>
+  <script src="./js/actions.test.js"></script>
+
+  <!-- main is loaded last, after dependencies: -->
+  <script src="./js/main.js"></script>
+
+  <!-- Run Tests: -->
+  <script>
+    testlib.runTests();
+  </script>
+</html>
